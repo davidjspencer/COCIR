@@ -76,6 +76,9 @@ p {
 .twitter--block {
   /* Twitter widget container */
   width: 100%; }
+  .twitter--block .social {
+    padding: 10px;
+    /* as per twitter widget */ }
 
 nav {
   width: 100%;
