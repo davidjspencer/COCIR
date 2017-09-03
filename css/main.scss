@@ -17,37 +17,43 @@ a.footer:link,a.footer:visited { font-family:verdana;font-size:14px;text-decorat
 a.footer:hover { text-decoration:none;color:#ffffff; }
 
 .left {
-float:left;
+  float:left;
 }
 
 .right {
-float:right;
-clear: both;
+  float:right;
+  clear: both;
 }
+h1,
+h2,
+h3 {
 
+}
 h1 {
-color: $dark-orange !important;
-font-family: verdana, arial, sans-serif;
-font-size: 20px;
+  color: $dark-orange !important;
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
 }
 
 .banner-hl {
-color: #0074a3 !important;
-font-family: verdana, arial, sans-serif;
-font-weight: bold;
-font-size: 34px;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  color: #0074a3 !important;
+  font-family: verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 34px;
 }
 
 h2 {
-color: $dark-orange !important;
-font-family: verdana, arial, sans-serif;
-font-size: 18px;
+  color: $dark-orange !important;
+  font-family: verdana, arial, sans-serif;
+  font-size: 18px;
 }
 
 h3 {
-color: #0074a3 !important;
-font-family: verdana, arial, sans-serif;
-font-size: 16px;
+  color: #0074a3 !important;
+  font-family: verdana, arial, sans-serif;
+  font-size: 16px;
 }
 p {
   color: $dark-grey;

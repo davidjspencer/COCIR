@@ -43,6 +43,8 @@ h1 {
   font-size: 20px; }
 
 .banner-hl {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
   color: #0074a3 !important;
   font-family: verdana, arial, sans-serif;
   font-weight: bold;
