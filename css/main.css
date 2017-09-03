@@ -134,13 +134,15 @@ nav {
     display: inline-block; }
     .home--body .home--body__left .home--body__text {
       width: calc(100% - 400px - 2em);
+      /* include img padding *2 if needed*/
       display: inline-block;
-      float: left; }
+      float: left;
+      padding-right: 1em; }
     .home--body .home--body__left .home--body__img {
       height: 100%;
-      padding: 1em;
       display: inline-block;
-      float: left; }
+      float: left;
+      padding: 0 2em 0 0; }
   .home--body .home--body__right {
     width: 20%;
     float: left;
