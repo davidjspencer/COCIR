@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>COCIR eHealth Summit 17</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalise.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -10,11 +11,68 @@
 	<meta name="robots" content="noindex"><!--  to be taken out !!! -->
 </head>
 <body>
+	<nav id="mySidebar">
+		<div class="w3-sidebar w3-bar-block">
+			<button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+			<div class="dropdown">
+			  <a class="dropbtn active">HOME</a>
+			  <div class="dropdown-content">
+			    <a href="#">Intro to the event</a>
+			    <a href="#">2016 summit</a>
+			    <a href="#">2015 summit</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">REGISTRATION</a>
+			  <div class="dropdown-content">
+			    <a href="#">Registration Policies</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">PROGRAMME</a>
+			  <div class="dropdown-content">
+			    <a href="#">2017 PRESENTATIONS</a>
+			    <a href="#">SPEAKERS</a>
+			    <a href="#">PHOTOS</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">PARTNERS</a>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">SPONSORS</a>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">GENERAL INFO</a>
+			  <div class="dropdown-content">
+			    <a href="#">Why should I attend?</a>
+			    <a href="#">FAQs</a>
+			    <a href="#">About COCIR</a>
+			    <a href="#">COCIR Publications</a>
+			    <a href="#">Venue Info</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">HOTEL</a>
+			</div>
+			<div class="dropdown">
+			  <a class="dropbtn">CONTACT</a>
+			</div>
+		</div><!-- nav container -->
+	</nav>
+	<div class="w3-teal" id="nav-burger-container">
+	  <button class="nav-burger" onclick="w3_open()">☰</button>
+	  <div class="container">
+	    <!-- <h1>My Page</h1> -->
+	  </div>
+  </div>
+
 	<div class="header">
 		<!-- <img src="" alt=""> -->
 	</div><!-- .header -->
-	<nav>
-		<div class="container">
+
+	<nav id="nav-desktop">
+		<div class="navbar container">
 			<div class="dropdown">
 			  <a class="dropbtn active">HOME</a>
 			  <div class="dropdown-content">
@@ -101,5 +159,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/nav.js"></script>
 </body>
 </html>

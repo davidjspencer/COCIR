@@ -7,7 +7,12 @@ $white: #ffffff;
 * {
 	font-family:verdana;
 	font-size: 14px;
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  /*overflow: auto;*/
 }
 a:link,a:visited { text-decoration:none;color:$orange; outline:none; }
 a:hover { text-decoration:underline;}
@@ -59,7 +64,9 @@ p {
   color: $dark-grey;
 }
 
-
+.hide {
+  display: none !important;
+}
 .header {
   width: 100%;
   height: 336px;
@@ -77,16 +84,84 @@ p {
     padding: 10px; /* as per twitter widget */
   }
 }
-nav {
-  width: 100%;
 
+
+
+.content {
+  clear: both;
+  border-top: 1px solid $light-grey;
+}
+.home--body {
+  width: 100%;
+  .home--body__left {
+    width: 80%;
+    float: left;
+    display: inline-block;
+
+    .home--body__text {
+      width: calc(100% - 400px - 2em); /* include img padding *2 if needed*/
+      display: inline-block;
+      float: left;
+      padding-right: 1em;
+    }
+    .home--body__img {
+      height: 100%;
+      display: inline-block;
+      float: left;
+      padding: 0 2em 0 0;
+    }
+  }
+  .home--body__right {
+    width: 20%;
+    float: left;
+    display: inline-block;
+  }
+}
+
+/* #### NAV #### */
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
+
+  #nav-desktop {
+    display: none;
+  }
+  .w3-teal {
+  }
+
+  #mySidebar {
+    display: none;
+    background: #ffffff;
+    overflow: auto;
+    .navbar {
+      height: 100%;
+    }
+  }
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block;}
+.dropdown a {
+  padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block;
+  clear: both;
+}
+.w3-sidebar.w3-collapse{display:none}
+.w3-sidebar.w3-collapse{display:block!important}
+.dropdown-content {
+  display: block;
+  padding-left: 2em;
+  clear: both;
+}
+}
+
+@media only screen and (min-device-width : 820px) {
+  #nav-mobile {
+    display: none;
+  }
+  nav {
+  width: 100%;
 
   .dropbtn {
     padding: .75em 1.25em;
     border: none;
     cursor: pointer;
-
-        /* Aligns text */
+      /* Aligns text */
     display: table-cell;
     vertical-align: middle;
 
@@ -146,34 +221,4 @@ nav {
   .dropdown:hover .dropbtn {
   }
 }
-
-.content {
-  clear: both;
-  border-top: 1px solid $light-grey;
-}
-.home--body {
-  width: 100%;
-  .home--body__left {
-    width: 80%;
-    float: left;
-    display: inline-block;
-
-    .home--body__text {
-      width: calc(100% - 400px - 2em); /* include img padding *2 if needed*/
-      display: inline-block;
-      float: left;
-      padding-right: 1em;
-    }
-    .home--body__img {
-      height: 100%;
-      display: inline-block;
-      float: left;
-      padding: 0 2em 0 0;
-    }
-  }
-  .home--body__right {
-    width: 20%;
-    float: left;
-    display: inline-block;
-  }
 }
