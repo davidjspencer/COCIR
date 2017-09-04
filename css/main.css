@@ -40,7 +40,8 @@ a.footer:hover {
 h1 {
   color: #ec7404 !important;
   font-family: verdana, arial, sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 13px 0; }
 
 .banner-hl {
   margin-top: 1.25em;
@@ -60,8 +61,13 @@ h3 {
   font-family: verdana, arial, sans-serif;
   font-size: 16px; }
 
+p,
+li {
+  color: #666666;
+  line-height: normal; }
+
 p {
-  color: #666666; }
+  margin: 1em 0; }
 
 .hide {
   display: none !important; }
@@ -281,6 +287,24 @@ footer {
       margin-top: 2em; }
 
   .timeline-Body .customisable-border .timeline-Viewport {
-    max-height: 400px !important; } }
+    max-height: 400px !important; }
+
+  .pages--body {
+    margin-top: 2em; }
+
+  .pages--body__text {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    padding-right: 4em; }
+
+  .pages--body__img {
+    width: 30%;
+    display: inline-block;
+    float: left; }
+    .pages--body__img img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
