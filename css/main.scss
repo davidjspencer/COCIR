@@ -25,10 +25,6 @@ a.footer:hover { text-decoration:none;color:#ffffff; }
   float:left;
 }
 
-.right {
-  float:right;
-  clear: both;
-}
 h1,
 h2,
 h3 {
@@ -91,7 +87,147 @@ p {
   clear: both;
   border-top: 1px solid $light-grey;
 }
-.home--body {
+
+
+/* #### NAV #### */
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
+  body {
+    position: relative;
+  }
+  #nav-desktop {
+    display: none;
+
+  }
+  .nav-burger {
+  }
+
+  #mySidebar {
+    display: none;
+    background: $orange;
+    color: $white;
+    overflow: auto;
+    .navbar {
+      height: 100%;
+    }
+  }
+  .dropbtn {
+    font-weight: bold;
+  }
+  .dropdown a {
+    padding: .6em 1.2em;
+    float:left;
+    width:100%;
+    border:none;
+    outline:none;
+    display:block;
+    clear: both;
+    color: $white;
+    border-top: 1px solid lighten($orange, 15);
+  }
+
+  .dropdown-content {
+    display: block;
+    padding-left: 2em;
+    clear: both;
+    width: 100%;
+  }
+  .nav-button--close {
+    float:left;
+    width:100%;
+    border:none;
+    outline:none;
+    display:block;
+    color: $white;
+    background: $dark-grey;
+    padding: .6em 1.2em;
+    font-size: 1.25em;
+  }
+
+  .home--body__left,
+  .home--body__text,
+  .home--body__img,
+  .home--body__right {
+    width: 100vw;
+    float: left;
+  }
+}
+
+@media only screen and (min-device-width : 820px) {
+  #mySidebar {
+    display: none;
+  }
+  .nav-burger {
+    display: none;
+  }
+  nav {
+    width: 100%;
+
+    .dropbtn {
+      padding: .75em 1.25em;
+      border: none;
+      cursor: pointer;
+        /* Aligns text */
+      display: table-cell;
+      vertical-align: middle;
+
+      text-decoration: none;
+      &:hover {
+        color: $orange;
+        border-bottom: 2px solid $orange;
+        padding-bottom: calc(.75em - 2px);
+        text-decoration: none;
+      }
+    }
+    .active {
+      color: $orange;
+      border-bottom: 2px solid $orange;
+      padding-bottom: calc(.75em - 2px);
+      text-decoration: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      float: left;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      padding: .86em 1.14em;
+      text-decoration: none;
+      display: block;
+      color: $white;
+      background: $orange;
+
+      &:hover {
+          background: lighten($orange, 15);
+      }
+    }
+
+    /* Change color of dropdown links on hover */
+
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+    }
+  }
+  .home--body {
   width: 100%;
   .home--body__left {
     width: 80%;
@@ -115,110 +251,6 @@ p {
     width: 20%;
     float: left;
     display: inline-block;
-  }
-}
-
-/* #### NAV #### */
-
-@media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
-
-  #nav-desktop {
-    display: none;
-  }
-  .w3-teal {
-  }
-
-  #mySidebar {
-    display: none;
-    background: #ffffff;
-    overflow: auto;
-    .navbar {
-      height: 100%;
-    }
-  }
-.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block;}
-.dropdown a {
-  padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block;
-  clear: both;
-}
-.w3-sidebar.w3-collapse{display:none}
-.w3-sidebar.w3-collapse{display:block!important}
-.dropdown-content {
-  display: block;
-  padding-left: 2em;
-  clear: both;
-}
-}
-
-@media only screen and (min-device-width : 820px) {
-  #nav-mobile {
-    display: none;
-  }
-  nav {
-  width: 100%;
-
-  .dropbtn {
-    padding: .75em 1.25em;
-    border: none;
-    cursor: pointer;
-      /* Aligns text */
-    display: table-cell;
-    vertical-align: middle;
-
-    text-decoration: none;
-    &:hover {
-      color: $orange;
-      border-bottom: 2px solid $orange;
-      padding-bottom: calc(.75em - 2px);
-      text-decoration: none;
-    }
-  }
-  .active {
-    color: $orange;
-    border-bottom: 2px solid $orange;
-    padding-bottom: calc(.75em - 2px);
-    text-decoration: none;
-  }
-
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    float: left;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    padding: .86em 1.14em;
-    text-decoration: none;
-    display: block;
-    color: $white;
-    background: $orange;
-
-    &:hover {
-        background: lighten($orange, 15);
-    }
-  }
-
-  /* Change color of dropdown links on hover */
-
-
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
   }
 }
 }
