@@ -134,10 +134,10 @@ footer {
   #nav-desktop {
     display: none; }
 
-  .nav-burger {
+  #nav-burger-container {
     background: #0074a3;
     font-size: 2em; }
-    .nav-burger button.nav-burger--button {
+    #nav-burger-container button.nav-burger--button {
       color: #ffffff !important; }
 
   #mySidebar {
