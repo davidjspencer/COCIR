@@ -246,7 +246,25 @@ footer {
     .download--bar button {
       width: 100%;
       display: inline-block;
-      float: left; } }
+      float: left; }
+
+  .hamburger-icon {
+    margin: 0;
+    padding: 19px 16px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+  .hamburger-icon span {
+    width: 40px;
+    background-color: #ffffff;
+    height: 5px;
+    display: block;
+    margin-bottom: 6px; }
+
+  .hamburger-icon span:last-child {
+    margin-bottom: 0px; } }
 @media only screen and (min-device-width: 820px) {
   .hide-lg {
     display: none; }
