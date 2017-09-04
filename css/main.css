@@ -6,7 +6,7 @@
 html,
 body {
   width: 100%;
-  /*overflow: auto;*/ }
+  overflow: auto; }
 
 a:link, a:visited {
   text-decoration: none;
@@ -140,7 +140,11 @@ p {
   .home--body__img,
   .home--body__right {
     width: 100vw;
-    float: left; } }
+    float: left; }
+
+  .home--body__img img {
+    width: 100%;
+    padding: 0; } }
 @media only screen and (min-device-width: 820px) {
   #mySidebar {
     display: none; }

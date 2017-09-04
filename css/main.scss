@@ -12,7 +12,7 @@ $white: #ffffff;
 html,
 body {
   width: 100%;
-  /*overflow: auto;*/
+  overflow: auto;
 }
 a:link,a:visited { text-decoration:none;color:$orange; outline:none; }
 a:hover { text-decoration:underline;}
@@ -150,6 +150,12 @@ p {
   .home--body__right {
     width: 100vw;
     float: left;
+  }
+  .home--body__img {
+    img {
+      width: 100%;
+      padding: 0;
+    }
   }
 }
 
