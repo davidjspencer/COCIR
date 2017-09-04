@@ -144,8 +144,10 @@ footer {
   #nav-burger-container {
 
     background: $blue;
-    font-size: 2em;
-    button.nav-burger--button {
+
+    a.nav-burger--button {
+      padding: 1em 0;
+      font-size: 2em;
       color: $white !important;
     }
   }

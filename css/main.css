@@ -135,9 +135,10 @@ footer {
     display: none; }
 
   #nav-burger-container {
-    background: #0074a3;
-    font-size: 2em; }
-    #nav-burger-container button.nav-burger--button {
+    background: #0074a3; }
+    #nav-burger-container a.nav-burger--button {
+      padding: 1em 0;
+      font-size: 2em;
       color: #ffffff !important; }
 
   #mySidebar {
