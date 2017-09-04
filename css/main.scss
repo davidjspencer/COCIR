@@ -65,7 +65,10 @@ li {
 p {
   margin: 1em 0;
 }
-
+img {
+  border: 1px solid $light-grey;
+  padding: .5em;
+}
 .hide {
   display: none !important;
 }
@@ -101,6 +104,29 @@ footer {
   border-top: 1px solid $light-grey;
 }
 
+.download--bar {
+    display: inline-block;
+    margin: 1em 0;
+    width: 100%;
+    background: $light-grey;
+    color: $dark-grey;
+    font-weight: bold;
+    span {
+      float: left;
+      padding: .5em;
+    }
+     button {
+      color: $orange;
+      background: $white;
+      border: 1px solid $orange;
+      float: right;
+      padding: .5em 1em;
+      &:hover {
+        background: $orange;
+        color: $white;
+      }
+     }
+  }
 
 /* #### NAV #### */
 
@@ -116,6 +142,12 @@ footer {
 
   }
   .nav-burger {
+
+    background: $blue;
+    font-size: 2em;
+    button.nav-burger--button {
+      color: $white !important;
+    }
   }
 
   #mySidebar {
@@ -191,6 +223,7 @@ footer {
       text-align: center;
       color: $white;
       margin: 1em 0;
+      border: none;
       padding: 1.07em .71em; /* 15/14 10/14 */
       white-space: nowrap;
       background: $blue;  /* fallback for old browsers */
@@ -202,6 +235,35 @@ footer {
   .in-co-op {
     margin: 1em auto;
     text-align: center;
+  }
+  .pages--body__text {
+    margin-bottom: 2em;
+  }
+  .pages--body__img {
+    display: inline-block;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+  }
+
+  .download--bar {
+    width: 100%;
+    display: inline-block;
+    float: left;
+
+    span {
+      width: 100%;
+      display: inline-block;
+      float: left;
+    }
+    button {
+      width: 100%;
+      display: inline-block;
+      float: left;
+    }
   }
 }
 
@@ -319,8 +381,12 @@ footer {
     width: 20%;
     float: right;
     display: inline-block;
+
     .spread-img {
       width: 100%;
+      border: none;
+      padding: 0;
+      margin: 0;
     }
   }
   .in-co-op {
@@ -339,8 +405,7 @@ footer {
   }
 
   .pages--body {
-    margin-top: 2em;
-
+    margin-top: 1em;
   }
   .pages--body__text {
     width: 70%;
@@ -358,5 +423,7 @@ footer {
       margin-bottom: 1em;
     }
   }
-
+  .no-img {
+    width: 80%;
+  }
 }

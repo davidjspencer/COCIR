@@ -69,6 +69,10 @@ li {
 p {
   margin: 1em 0; }
 
+img {
+  border: 1px solid #eeeeee;
+  padding: .5em; }
+
 .hide {
   display: none !important; }
 
@@ -99,6 +103,26 @@ footer {
   clear: both;
   border-top: 1px solid #eeeeee; }
 
+.download--bar {
+  display: inline-block;
+  margin: 1em 0;
+  width: 100%;
+  background: #eeeeee;
+  color: #666666;
+  font-weight: bold; }
+  .download--bar span {
+    float: left;
+    padding: .5em; }
+  .download--bar button {
+    color: #ed7624;
+    background: #ffffff;
+    border: 1px solid #ed7624;
+    float: right;
+    padding: .5em 1em; }
+    .download--bar button:hover {
+      background: #ed7624;
+      color: #ffffff; }
+
 /* #### NAV #### */
 @media only screen and (min-device-width: 280px) and (max-device-width: 819px) {
   body {
@@ -109,6 +133,12 @@ footer {
 
   #nav-desktop {
     display: none; }
+
+  .nav-burger {
+    background: #0074a3;
+    font-size: 2em; }
+    .nav-burger button.nav-burger--button {
+      color: #ffffff !important; }
 
   #mySidebar {
     display: none;
@@ -177,6 +207,7 @@ footer {
       text-align: center;
       color: #ffffff;
       margin: 1em 0;
+      border: none;
       padding: 1.07em .71em;
       /* 15/14 10/14 */
       white-space: nowrap;
@@ -190,7 +221,31 @@ footer {
 
   .in-co-op {
     margin: 1em auto;
-    text-align: center; } }
+    text-align: center; }
+
+  .pages--body__text {
+    margin-bottom: 2em; }
+
+  .pages--body__img {
+    display: inline-block;
+    float: left; }
+    .pages--body__img img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em; }
+
+  .download--bar {
+    width: 100%;
+    display: inline-block;
+    float: left; }
+    .download--bar span {
+      width: 100%;
+      display: inline-block;
+      float: left; }
+    .download--bar button {
+      width: 100%;
+      display: inline-block;
+      float: left; } }
 @media only screen and (min-device-width: 820px) {
   .hide-lg {
     display: none; }
@@ -276,7 +331,10 @@ footer {
       float: right;
       display: inline-block; }
       .home--body .twitter--block .spread-img {
-        width: 100%; }
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0; }
     .home--body .in-co-op {
       position: absolute;
       bottom: 0;
@@ -290,7 +348,7 @@ footer {
     max-height: 400px !important; }
 
   .pages--body {
-    margin-top: 2em; }
+    margin-top: 1em; }
 
   .pages--body__text {
     width: 70%;
@@ -305,6 +363,9 @@ footer {
     .pages--body__img img {
       width: 100%;
       height: auto;
-      margin-bottom: 1em; } }
+      margin-bottom: 1em; }
+
+  .no-img {
+    width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
