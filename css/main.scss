@@ -13,7 +13,6 @@ $white: #ffffff;
 html,
 body {
   width: 100vw;
-  overflow: auto;
 }
 a:link,a:visited { text-decoration:none;color:$orange; outline:none; }
 a:hover { text-decoration:underline;}
@@ -73,7 +72,7 @@ p {
   width: 93.5%;
   margin-left: auto;
   margin-right: auto;
-  overflow:auto;
+
 }
 
 .twitter--block { /* Twitter widget container */
@@ -195,7 +194,7 @@ footer {
     }
   }
   .in-co-op {
-    margin: 2em auto;
+    margin: 1em auto;
     text-align: center;
   }
 }
@@ -278,10 +277,14 @@ footer {
     }
   }
   .container {
-    position: relative;
+
   }
   .home--body {
   width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+
   .home--body__left {
     width: 80%;
     float: left;
