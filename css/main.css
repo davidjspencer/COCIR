@@ -110,6 +110,7 @@ footer {
   border-top: 1px solid #eeeeee; }
 
 .button--lg__orange {
+  border: none;
   background: #ed7624;
   background: #0074a3;
   /* fallback for old browsers */

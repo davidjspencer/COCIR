@@ -108,6 +108,7 @@ footer {
   border-top: 1px solid $light-grey;
 }
 .button--lg__orange {
+  border: none;
   background: $orange;
   background: $blue;  /* fallback for old browsers */
   background: -webkit-linear-gradient(lighten($orange,10), $orange);
