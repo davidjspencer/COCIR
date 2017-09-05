@@ -4,6 +4,7 @@ $dark-grey: #666666;
 $light-grey: #eeeeee;
 $blue: #0074a3;
 $white: #ffffff;
+$green: #07656b;
 
 * {
 	font-family:verdana;
@@ -31,7 +32,7 @@ h3 {
 
 }
 h1 {
-  color: $dark-orange !important;
+  color: $dark-orange;
   font-family: verdana, arial, sans-serif;
   font-size: 20px;
   margin: 13px 0;
@@ -40,20 +41,20 @@ h1 {
 .banner-hl {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  color: #0074a3 !important;
+  color: #0074a3;
   font-family: verdana, arial, sans-serif;
   font-weight: bold;
   font-size: 34px;
 }
 
 h2 {
-  color: $dark-orange !important;
+  color: $dark-orange;
   font-family: verdana, arial, sans-serif;
   font-size: 18px;
 }
 
 h3 {
-  color: #0074a3 !important;
+  color: #0074a3;
   font-family: verdana, arial, sans-serif;
   font-size: 16px;
 }
@@ -73,9 +74,13 @@ img {
   display: none !important;
 }
 .header {
-  width: 100%;
   height: 336px;
+  overflow: auto;
   background: $blue;
+  background-image: url('../img/BannerWEBSITE_1200x336px.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+
 }
 .container {
   width: 93.5%;
@@ -465,6 +470,10 @@ table {
   .in-co-op {
     display: inline-block;
     margin-top: 2em;
+    img {
+      width: 30%;
+      height: auto;
+    }
   }
 }
   .timeline-Body .customisable-border {
@@ -477,13 +486,13 @@ table {
     margin-top: 1em;
   }
   .pages--body__text {
-    width: 70%;
+    width: 60%;
     display: inline-block;
     float: left;
     padding-right: 4em;
   }
   .pages--body__img {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     float: left;
     img {
