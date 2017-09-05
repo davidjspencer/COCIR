@@ -86,12 +86,18 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
+.grey-line {
+  border-bottom: 1px solid #666666; }
+
 .twitter--block {
   /* Twitter widget container */
   width: 100%; }
   .twitter--block .social {
     padding: 10px;
     /* as per twitter widget */ }
+
+.pages--body__text {
+  margin-bottom: 2em; }
 
 footer {
   margin-top: 2em;
@@ -102,6 +108,22 @@ footer {
 .content {
   clear: both;
   border-top: 1px solid #eeeeee; }
+
+.button--lg__orange {
+  background: #ed7624;
+  background: #0074a3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(#f19353, #ed7624);
+  background: -o-linear-gradient(#f19353, #ed7624);
+  background: linear-gradient(#f19353, #ed7624);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  padding: 1em 2em;
+  font-size: 1.25em; }
+  .button--lg__orange:hover {
+    background: #ffffff;
+    color: #ed7624; }
 
 .download--bar {
   display: inline-block;
@@ -122,6 +144,24 @@ footer {
     .download--bar button:hover {
       background: #ed7624;
       color: #ffffff; }
+
+table th {
+  background: #0074a3;
+  color: #ffffff;
+  padding: 1em .5em; }
+table td {
+  padding: 1em .5em;
+  border: 1px solid #eeeeee;
+  color: #666666; }
+  table td:not(first-child) {
+    text-align: right; }
+
+.row {
+  width: 100%; }
+  .row .row--item {
+    display: inline-block;
+    float: left;
+    width: 100%; }
 
 /* #### NAV #### */
 @media only screen and (min-device-width: 280px) and (max-device-width: 819px) {
@@ -287,6 +327,7 @@ footer {
       padding: .75em 1.25em;
       border: none;
       cursor: pointer;
+      color: #666666;
       /* Aligns text */
       display: table-cell;
       vertical-align: middle;
@@ -355,11 +396,6 @@ footer {
         padding: 0;
         margin: 0; }
     .home--body .in-co-op {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      max-width: 80%;
-      /* stop overflow into twitter */
       display: inline-block;
       margin-top: 2em; }
 
@@ -385,6 +421,20 @@ footer {
       margin-bottom: 1em; }
 
   .no-img {
-    width: 80%; } }
+    width: 80%; }
+
+  .row .row--item {
+    width: 50%; }
+    .row .row--item .row--item__content .img {
+      display: inline-block;
+      float: left;
+      width: 20%;
+      border: 1px solid #ed7624;
+      /* temporary */ }
+    .row .row--item .row--item__content .text {
+      display: inline-block;
+      float: left;
+      width: 80%;
+      padding-right: 2em; } }
 
 /*# sourceMappingURL=main.css.map */

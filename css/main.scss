@@ -83,7 +83,9 @@ img {
   margin-right: auto;
 
 }
-
+.grey-line {
+  border-bottom: 1px solid $dark-grey;
+}
 .twitter--block { /* Twitter widget container */
   width: 100%;
 
@@ -91,7 +93,9 @@ img {
     padding: 10px; /* as per twitter widget */
   }
 }
-
+.pages--body__text {
+  margin-bottom: 2em;
+}
 footer {
   margin-top: 2em;
   border-top: 1px solid $light-grey;
@@ -103,31 +107,66 @@ footer {
   clear: both;
   border-top: 1px solid $light-grey;
 }
-
-.download--bar {
-    display: inline-block;
-    margin: 1em 0;
-    width: 100%;
-    background: $light-grey;
-    color: $dark-grey;
-    font-weight: bold;
-    span {
-      float: left;
-      padding: .5em;
-    }
-    button {
-      color: $orange;
+.button--lg__orange {
+  background: $orange;
+  background: $blue;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(lighten($orange,10), $orange);
+  background: -o-linear-gradient(lighten($orange,10), $orange);
+  background: linear-gradient(lighten($orange,10), $orange);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $white;
+  padding: 1em 2em;
+  font-size: 1.25em;
+    &:hover {
       background: $white;
-      border: 1px solid $orange;
-      float: right;
-      padding: .5em 1.5em;
-      &:hover {
-        background: $orange;
-        color: $white;
-      }
+      color: $orange;
+    }
+}
+.download--bar {
+  display: inline-block;
+  margin: 1em 0;
+  width: 100%;
+  background: $light-grey;
+  color: $dark-grey;
+  font-weight: bold;
+  span {
+    float: left;
+    padding: .5em;
+  }
+  button {
+    color: $orange;
+    background: $white;
+    border: 1px solid $orange;
+    float: right;
+    padding: .5em 1.5em;
+    &:hover {
+      background: $orange;
+      color: $white;
     }
   }
-
+}
+table {
+  th {
+    background: $blue;
+    color: $white;
+    padding: 1em .5em;
+  }
+  td {
+    padding: 1em .5em;
+    border: 1px solid $light-grey;
+    color: $dark-grey;
+    &:not(first-child) {
+      text-align: right;
+    }
+  }
+}
+.row {
+  width: 100%;
+  .row--item {
+    display: inline-block;
+    float: left;
+    width: 100%;
+  }
+}
 /* #### NAV #### */
 
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
@@ -274,18 +313,18 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-}
-.hamburger-icon span {
-    width: 40px;
-    background-color: $white;
+  }
+  .hamburger-icon span {
+      width: 40px;
+      background-color: $white;
 
-    height: 5px;
-    display: block;
-    margin-bottom: 6px;
-}
-.hamburger-icon span:last-child {
-    margin-bottom:0px;
-}
+      height: 5px;
+      display: block;
+      margin-bottom: 6px;
+  }
+  .hamburger-icon span:last-child {
+      margin-bottom:0px;
+  }
 }
 
 @media only screen and (min-device-width : 820px) {
@@ -305,6 +344,8 @@ footer {
       padding: .75em 1.25em;
       border: none;
       cursor: pointer;
+      color: $dark-grey;
+
         /* Aligns text */
       display: table-cell;
       vertical-align: middle;
@@ -411,10 +452,6 @@ footer {
     }
   }
   .in-co-op {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 80%; /* stop overflow into twitter */
     display: inline-block;
     margin-top: 2em;
   }
@@ -446,5 +483,24 @@ footer {
   }
   .no-img {
     width: 80%;
+  }
+  .row {
+    .row--item {
+      width: 50%;
+      .row--item__content {
+        .img {
+          display: inline-block;
+          float: left;
+          width: 20%;
+          border: 1px solid $orange; /* temporary */
+        }
+        .text {
+          display: inline-block;
+          float: left;
+          width: 80%;
+          padding-right: 2em;
+        }
+      }
+    }
   }
 }
