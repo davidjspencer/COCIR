@@ -70,8 +70,8 @@ p {
   margin: 1em 0; }
 
 img {
-  border: 1px solid #eeeeee;
-  padding: .5em; }
+  /*border: 1px solid $light-grey;
+  padding: .5em;*/ }
 
 .hide {
   display: none !important; }
@@ -163,6 +163,11 @@ table td {
     display: inline-block;
     float: left;
     width: 100%; }
+    .row .row--item .row--item__content .img img {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto; }
 
 /* #### NAV #### */
 @media only screen and (min-device-width: 280px) and (max-device-width: 819px) {
@@ -429,13 +434,16 @@ table td {
     .row .row--item .row--item__content .img {
       display: inline-block;
       float: left;
-      width: 20%;
-      border: 1px solid #ed7624;
-      /* temporary */ }
+      width: 30%; }
+      .row .row--item .row--item__content .img img {
+        width: 100%;
+        height: auto; }
     .row .row--item .row--item__content .text {
       display: inline-block;
       float: left;
-      width: 80%;
-      padding-right: 2em; } }
+      width: 70%;
+      padding: 0 2em; }
+      .row .row--item .row--item__content .text p {
+        margin-top: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
