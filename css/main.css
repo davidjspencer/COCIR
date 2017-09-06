@@ -233,6 +233,9 @@ table td {
     background-image: url("../img/mob-header.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
+    .mobile-heading .cocir-logo {
+      height: 50%;
+      width: auto; }
     .mobile-heading h1,
     .mobile-heading h2 {
       text-align: center;
