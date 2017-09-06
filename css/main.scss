@@ -59,6 +59,12 @@ li {
   color: $dark-grey;
   line-height: normal;
 }
+ul li {
+  list-style-type: disc;
+}
+ol>li {
+  margin: 1em 0;
+}
 p {
   margin: 1em 0;
 }
@@ -176,7 +182,18 @@ table {
     }
   }
 }
-
+.question {
+  font-weight: bold;
+  &:not(:first-child) {
+    margin-top: 2.25em;
+  }
+}
+strong {
+  color: $dark-grey;
+}
+.orange {
+  color: $dark-orange;
+}
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
   body {
     width: 100vw;
