@@ -22,10 +22,6 @@ a.menu:hover { color:#ffffff; }
 a.footer:link,a.footer:visited { font-family:verdana;font-size:14px;text-decoration:underline;color:$orange; }
 a.footer:hover { text-decoration:none;color:#ffffff; }
 
-.left {
-  float:left;
-}
-
 h1,
 h2,
 h3 {
@@ -34,8 +30,8 @@ h3 {
 h1 {
   color: $dark-orange;
   font-family: verdana, arial, sans-serif;
-  font-size: 20px;
-  margin: 13px 0;
+  font-size: 1.43em; /*20px*/
+  margin: 1em 0;
 }
 
 .banner-hl {
@@ -74,19 +70,16 @@ img {
   display: none !important;
 }
 .header {
-  height: 336px;
-  overflow: auto;
-  background: $blue;
-  background-image: url('../img/BannerWEBSITE_1200x336px.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
-
 }
 .container {
   width: 93.5%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 
+}
+.nav-line {
+  border-top: 1px solid $light-grey;
 }
 .grey-line {
   border-bottom: 1px solid $dark-grey;
@@ -110,7 +103,6 @@ footer {
 
 .content {
   clear: both;
-  border-top: 1px solid $light-grey;
 }
 .button--lg__orange {
   border: none;
@@ -183,7 +175,6 @@ table {
     }
   }
 }
-/* #### NAV #### */
 
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
   body {
@@ -248,6 +239,45 @@ table {
     padding: .6em 1.2em;
     font-size: 1.25em;
   }
+  .header.container {
+    width: 100%;
+    margin: 0px;
+    background: $blue;
+  }
+  .mobile-heading {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: $blue;
+    background-image: url('../img/mob-header.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    h1,
+    h2 {
+      text-align: center;
+      font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+      color: $dark-orange;
+      font-size: 2em;
+      span {
+        font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+        color: $white;
+        font-size: 2em;
+      }
+    }
+    .orange {
+      color: $dark-orange;
+    }
+    .white {
+      color: $white;
+    }
+    .twitter-img {
+      position: relative;
+
+      img {
+        height: 2em;
+        width: auto;
+      }
+    }
+  }
   .home--body {
     height: 100%;
     overflow-y: auto;
@@ -291,7 +321,12 @@ table {
   }
   .in-co-op {
     margin: 1em auto;
+    width: 100%;
     text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .pages--body__text {
     margin-bottom: 2em;
@@ -324,11 +359,11 @@ table {
   }
   .hamburger-icon {
     margin: 0;
-    padding: 19px 16px;
+    padding: 2em 16px;
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
   }
   .hamburger-icon span {
       width: 40px;
@@ -410,20 +445,23 @@ table {
       }
     }
 
-    /* Change color of dropdown links on hover */
-
-
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
       display: block;
     }
 
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {
-    }
   }
   .container {
 
+  }
+  .header {
+    height: 336px;
+    overflow: auto;
+    border-bottom: 1px solid $light-grey;
+    background: $blue;
+    background-image: url('../img/BannerWEBSITE_1200x336px.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .home--body {
   width: 100%;

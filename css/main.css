@@ -34,14 +34,12 @@ a.footer:hover {
   text-decoration: none;
   color: #ffffff; }
 
-.left {
-  float: left; }
-
 h1 {
   color: #ec7404;
   font-family: verdana, arial, sans-serif;
-  font-size: 20px;
-  margin: 13px 0; }
+  font-size: 1.43em;
+  /*20px*/
+  margin: 1em 0; }
 
 .banner-hl {
   margin-top: 1.25em;
@@ -76,18 +74,14 @@ img {
 .hide {
   display: none !important; }
 
-.header {
-  height: 336px;
-  overflow: auto;
-  background: #0074a3;
-  background-image: url("../img/BannerWEBSITE_1200x336px.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .container {
   width: 93.5%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+
+.nav-line {
+  border-top: 1px solid #eeeeee; }
 
 .grey-line {
   border-bottom: 1px solid #666666; }
@@ -109,8 +103,7 @@ footer {
   clear: both; }
 
 .content {
-  clear: both;
-  border-top: 1px solid #eeeeee; }
+  clear: both; }
 
 .button--lg__orange {
   border: none;
@@ -172,7 +165,6 @@ table td {
       margin-left: auto;
       margin-right: auto; }
 
-/* #### NAV #### */
 @media only screen and (min-device-width: 280px) and (max-device-width: 819px) {
   body {
     width: 100vw; }
@@ -229,6 +221,39 @@ table td {
     padding: .6em 1.2em;
     font-size: 1.25em; }
 
+  .header.container {
+    width: 100%;
+    margin: 0px;
+    background: #0074a3; }
+
+  .mobile-heading {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #0074a3;
+    background-image: url("../img/mob-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .mobile-heading h1,
+    .mobile-heading h2 {
+      text-align: center;
+      font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+      color: #ec7404;
+      font-size: 2em; }
+      .mobile-heading h1 span,
+      .mobile-heading h2 span {
+        font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+        color: #ffffff;
+        font-size: 2em; }
+    .mobile-heading .orange {
+      color: #ec7404; }
+    .mobile-heading .white {
+      color: #ffffff; }
+    .mobile-heading .twitter-img {
+      position: relative; }
+      .mobile-heading .twitter-img img {
+        height: 2em;
+        width: auto; }
+
   .home--body {
     height: 100%;
     overflow-y: auto; }
@@ -271,7 +296,11 @@ table td {
 
   .in-co-op {
     margin: 1em auto;
+    width: 100%;
     text-align: center; }
+    .in-co-op img {
+      width: 100%;
+      height: auto; }
 
   .pages--body__text {
     margin-bottom: 2em; }
@@ -299,11 +328,11 @@ table td {
 
   .hamburger-icon {
     margin: 0;
-    padding: 19px 16px;
+    padding: 2em 16px;
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 0; }
+    right: 0; }
 
   .hamburger-icon span {
     width: 40px;
@@ -329,9 +358,7 @@ table td {
     /* The container <div> - needed to position the dropdown content */
     /* Dropdown Content (Hidden by Default) */
     /* Links inside the dropdown */
-    /* Change color of dropdown links on hover */
-    /* Show the dropdown menu on hover */
-    /* Change the background color of the dropdown button when the dropdown content is shown */ }
+    /* Show the dropdown menu on hover */ }
     nav .dropbtn {
       padding: .75em 1.25em;
       border: none;
@@ -371,6 +398,15 @@ table td {
         background: #f3a26b; }
     nav .dropdown:hover .dropdown-content {
       display: block; }
+
+  .header {
+    height: 336px;
+    overflow: auto;
+    border-bottom: 1px solid #eeeeee;
+    background: #0074a3;
+    background-image: url("../img/BannerWEBSITE_1200x336px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
 
   .home--body {
     width: 100%;
