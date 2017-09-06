@@ -349,13 +349,28 @@ strong {
       .in-co-op .partnership .logos {
         width: 100%;
         text-align: center; }
+        .in-co-op .co-op .logos .logos-container,
+        .in-co-op .partnership .logos .logos-container {
+          margin-left: auto;
+          margin-right: auto;
+          align-content: center; }
         .in-co-op .co-op .logos img,
         .in-co-op .partnership .logos img {
-          display: block;
+          display: inline-block;
+          float: left;
           margin: auto;
           width: 50%;
           height: auto;
           padding: .25em; }
+    .in-co-op .co-op .logos {
+      width: 100%;
+      text-align: center; }
+      .in-co-op .co-op .logos img {
+        float: none;
+        margin: auto;
+        width: 50%;
+        height: auto;
+        padding: .25em; }
 
   .pages--body__text {
     margin-bottom: 2em; }
