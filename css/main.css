@@ -323,12 +323,39 @@ strong {
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
   .in-co-op {
-    margin: 1em auto;
     width: 100%;
+    overflow: auto;
     text-align: center; }
-    .in-co-op img {
+    .in-co-op .co-op,
+    .in-co-op .partnership {
+      border: 1px solid #0074a3;
+      overflow: auto;
       width: 100%;
-      height: auto; }
+      padding: 1em; }
+      .in-co-op .co-op p,
+      .in-co-op .co-op strong,
+      .in-co-op .partnership p,
+      .in-co-op .partnership strong {
+        color: #0074a3; }
+        .in-co-op .co-op p span,
+        .in-co-op .co-op strong span,
+        .in-co-op .partnership p span,
+        .in-co-op .partnership strong span {
+          color: #0098d6; }
+      .in-co-op .co-op .text,
+      .in-co-op .partnership .text {
+        width: 100%; }
+      .in-co-op .co-op .logos,
+      .in-co-op .partnership .logos {
+        width: 100%;
+        text-align: center; }
+        .in-co-op .co-op .logos img,
+        .in-co-op .partnership .logos img {
+          display: block;
+          margin: auto;
+          width: 50%;
+          height: auto;
+          padding: .25em; }
 
   .pages--body__text {
     margin-bottom: 2em; }
@@ -469,11 +496,55 @@ strong {
         padding: 0;
         margin: 0; }
     .home--body .in-co-op {
+      clear: both;
+      width: 80%;
       display: inline-block;
-      margin-top: 2em; }
-      .home--body .in-co-op img {
-        width: 30%;
-        height: auto; }
+      margin-top: 2em;
+      border: 1px solid #0074a3;
+      padding: 0 1em; }
+      .home--body .in-co-op .co-op {
+        border-bottom: 1px solid #0074a3; }
+      .home--body .in-co-op .co-op,
+      .home--body .in-co-op .partnership {
+        display: inline-block;
+        float: left; }
+        .home--body .in-co-op .co-op p,
+        .home--body .in-co-op .co-op strong,
+        .home--body .in-co-op .partnership p,
+        .home--body .in-co-op .partnership strong {
+          color: #0074a3; }
+          .home--body .in-co-op .co-op p span,
+          .home--body .in-co-op .co-op strong span,
+          .home--body .in-co-op .partnership p span,
+          .home--body .in-co-op .partnership strong span {
+            color: #00aaf0; }
+        .home--body .in-co-op .co-op .text,
+        .home--body .in-co-op .partnership .text {
+          display: inline-block;
+          float: left;
+          width: 45%; }
+        .home--body .in-co-op .co-op .logos,
+        .home--body .in-co-op .partnership .logos {
+          display: inline-block;
+          float: left;
+          width: 55%;
+          align-content: center;
+          text-align: center; }
+          .home--body .in-co-op .co-op .logos .logos-container,
+          .home--body .in-co-op .partnership .logos .logos-container {
+            width: 50%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            align-content: center; }
+          .home--body .in-co-op .co-op .logos img,
+          .home--body .in-co-op .partnership .logos img {
+            display: inline-block;
+            float: left;
+            margin: auto;
+            width: 50%;
+            height: auto;
+            padding: 1em; }
 
   .timeline-Body .customisable-border .timeline-Viewport {
     max-height: 400px !important; }
