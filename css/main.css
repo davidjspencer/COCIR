@@ -106,7 +106,7 @@ footer {
   clear: both; }
 
 .button--lg__orange {
-  border: none;
+  border: 1px solid #ed7624;
   background: #ed7624;
   background: #0074a3;
   /* fallback for old browsers */
@@ -120,7 +120,8 @@ footer {
   font-size: 1.25em; }
   .button--lg__orange:hover {
     background: #ffffff;
-    color: #ed7624; }
+    color: #ed7624;
+    border: 1px solid #ed7624; }
 
 .download--bar {
   display: inline-block;
@@ -236,17 +237,24 @@ table td {
     .mobile-heading .cocir-logo {
       height: 50%;
       width: auto; }
-    .mobile-heading h1,
-    .mobile-heading h2 {
+    .mobile-heading h1 {
       text-align: center;
       font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
       color: #ec7404;
       font-size: 2em; }
-      .mobile-heading h1 span,
-      .mobile-heading h2 span {
+      .mobile-heading h1 span {
         font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
         color: #ffffff;
         font-size: 2em; }
+    .mobile-heading h2 {
+      text-align: center;
+      font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+      color: #ec7404;
+      font-size: 2rem; }
+      .mobile-heading h2 span {
+        font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+        color: #ffffff;
+        font-size: 2rem; }
     .mobile-heading .orange {
       color: #ec7404; }
     .mobile-heading .white {
