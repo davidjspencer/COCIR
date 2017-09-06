@@ -503,6 +503,7 @@ strong {
           height: auto; }
     .home--body .twitter--block {
       width: 20%;
+      height: 100%;
       float: right;
       display: inline-block; }
       .home--body .twitter--block .spread-img {
@@ -513,10 +514,10 @@ strong {
     .home--body .in-co-op {
       clear: both;
       width: 80%;
-      display: inline-block;
+      position: absolute;
+      bottom: 0;
       margin-top: 2em;
-      border: 1px solid #0074a3;
-      padding: 0 1em; }
+      padding: 0 2em 0 0; }
       .home--body .in-co-op .co-op {
         border-bottom: 1px solid #0074a3; }
       .home--body .in-co-op .co-op,
@@ -537,12 +538,12 @@ strong {
         .home--body .in-co-op .partnership .text {
           display: inline-block;
           float: left;
-          width: 45%; }
+          width: 55%; }
         .home--body .in-co-op .co-op .logos,
         .home--body .in-co-op .partnership .logos {
           display: inline-block;
           float: left;
-          width: 55%;
+          width: 45%;
           align-content: center;
           text-align: center; }
           .home--body .in-co-op .co-op .logos .logos-container,
@@ -559,7 +560,7 @@ strong {
             margin: auto;
             width: 50%;
             height: auto;
-            padding: 1em; }
+            padding: .25em; }
 
   .timeline-Body .customisable-border .timeline-Viewport {
     max-height: 400px !important; }

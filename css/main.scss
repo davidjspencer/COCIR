@@ -574,6 +574,7 @@ strong {
   }
   .twitter--block {
     width: 20%;
+    height: 100%;
     float: right;
     display: inline-block;
 
@@ -587,10 +588,11 @@ strong {
   .in-co-op {
     clear: both;
     width: 80%;
-    display: inline-block;
+    position: absolute;
+    bottom: 0;
+
     margin-top: 2em;
-    border: 1px solid $blue;
-    padding: 0 1em;
+    padding: 0 2em 0 0;
     .co-op {
       border-bottom: 1px solid $blue;
     }
@@ -598,6 +600,7 @@ strong {
     .partnership {
       display: inline-block;
       float: left;
+
       p,
       strong {
         color: $blue;
@@ -608,12 +611,12 @@ strong {
       .text {
         display: inline-block;
         float: left;
-        width: 45%;
+        width: 55%;
       }
       .logos {
         display: inline-block;
         float: left;
-        width: 55%;
+        width: 45%;
         align-content: center;
         text-align: center;
         .logos-container {
@@ -629,7 +632,7 @@ strong {
           margin:auto;
           width: 50%;
           height: auto;
-          padding: 1em;
+          padding: .25em;
         }
       }
     }
