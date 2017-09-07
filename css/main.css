@@ -745,13 +745,13 @@ strong {
         width: 75%;
         height: auto; }
 
-  .hotel {
+  .pages--body__text.no-img.hotel {
     width: 100%; }
-    .hotel p {
+    .pages--body__text.no-img.hotel p {
       width: 60%; }
-    .hotel .reg-table {
+    .pages--body__text.no-img.hotel .reg-table {
       width: 80%; }
-      .hotel .reg-table table.hotel-table {
+      .pages--body__text.no-img.hotel .reg-table table.hotel-table {
         width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
