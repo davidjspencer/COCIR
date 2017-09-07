@@ -499,6 +499,28 @@ strong {
         padding: 1em 0;
       }
     }
+  .strategic-partner {
+      border: 1px solid $blue;
+      width: 100%;
+      overflow: auto;
+      padding: 1em;
+      .text {
+        width: 100%;
+        float: left;
+        p {
+          color: $blue;
+        }
+
+      }
+      .logos {
+        width: 100%;
+        float: left;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px)  {
   .publication-row {
@@ -660,9 +682,7 @@ strong {
   }
   .in-co-op {
     clear: both;
-    width: 80%;
-    position: absolute;
-    bottom: 0;
+    width: 100%;
 
     margin-top: 2em;
     padding: 0 2em 0 0;
@@ -815,6 +835,27 @@ strong {
         width: 50%;
         height: auto;
         padding: 1em;
+      }
+    }
+    .strategic-partner {
+      width: 100%;
+      clear: both;
+      .text {
+        width: 60%;
+        display: inline-block;
+        float: left;
+        p {
+          color: $blue;
+        }
+      }
+      .logos {
+        width: 40%;
+        display: inline-block;
+        float: left;
+        img {
+          width: 75%;
+          height: auto;
+        }
       }
     }
 }
