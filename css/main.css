@@ -437,10 +437,41 @@ strong {
     margin-bottom: 6px; }
 
   .hamburger-icon span:last-child {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+
+  .venue-img {
+    width: 100%;
+    clear: both; }
+    .venue-img img {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      padding: 1em 0; } }
 @media only screen and (min-device-width: 695px) and (max-device-width: 819px) {
   .publication-row .publication {
-    width: calc(50% - 2em); } }
+    width: calc(50% - 2em); }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden; }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+  .venue-img {
+    width: 100%;
+    clear: both; }
+    .venue-img img {
+      display: inline-block;
+      width: 50%;
+      height: auto;
+      padding: 1em; } }
 @media only screen and (min-device-width: 820px) {
   .hide-lg {
     display: none; }
@@ -651,6 +682,28 @@ strong {
         width: 100%;
         height: auto;
         display: inline-block;
-        float: left; } }
+        float: left; }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden; }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+  .venue-img {
+    width: 100%;
+    clear: both; }
+    .venue-img img {
+      display: inline-block;
+      width: 50%;
+      height: auto;
+      padding: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
