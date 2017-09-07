@@ -228,6 +228,7 @@ strong {
 .orange {
   color: $dark-orange;
 }
+
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
   body {
     width: 100vw;
@@ -520,6 +521,13 @@ strong {
           height: auto;
         }
       }
+    }
+    table.hotel-table {
+      display: block;
+        overflow-x: auto;
+    }
+    .min-width {
+      min-width: 160px;
     }
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px)  {
@@ -858,4 +866,18 @@ strong {
         }
       }
     }
+  .hotel {
+    width: 100%;
+    p {
+      width: 60%;
+    }
+    .reg-table {
+      width: 80%;
+
+      table.hotel-table {
+        width: 100%;
+
+      }
+    }
+  }
 }
