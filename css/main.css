@@ -172,6 +172,31 @@ table td {
       margin-left: auto;
       margin-right: auto; }
 
+.publication-row .publication {
+  width: 100%;
+  overflow: auto;
+  display: inline-block;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #eeeeee;
+  padding: 1em;
+  box-shadow: 1px 1px 3px #eeeeee; }
+  .publication-row .publication a {
+    width: 100%; }
+  .publication-row .publication figure {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin: 0; }
+    .publication-row .publication figure img {
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      float: left; }
+  .publication-row .publication:hover {
+    border-color: #666666; }
+
 .question {
   font-weight: bold; }
   .question:not(:first-child) {
@@ -413,6 +438,9 @@ strong {
 
   .hamburger-icon span:last-child {
     margin-bottom: 0px; } }
+@media only screen and (min-device-width: 695px) and (max-device-width: 819px) {
+  .publication-row .publication {
+    width: calc(50% - 2em); } }
 @media only screen and (min-device-width: 820px) {
   .hide-lg {
     display: none; }
@@ -601,6 +629,28 @@ strong {
       width: 70%;
       padding: 0 2em; }
       .row .row--item .row--item__content .text p {
-        margin-top: 0px; } }
+        margin-top: 0px; }
+
+  .publication-row .publication {
+    width: 20%;
+    min-width: 200px;
+    overflow: auto;
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+    border: 1px solid #eeeeee;
+    padding: 1em; }
+    .publication-row .publication a {
+      width: 100%; }
+    .publication-row .publication figure {
+      width: 100%;
+      display: inline-block;
+      float: left;
+      margin: 0; }
+      .publication-row .publication figure img {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        float: left; } }
 
 /*# sourceMappingURL=main.css.map */
