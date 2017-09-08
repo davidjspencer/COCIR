@@ -7,7 +7,6 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("nav-burger-container").classList.remove("hide");
-
 }
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -19,7 +18,6 @@ var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
 var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
@@ -38,7 +36,6 @@ btn3.onclick = function() {
 btn4.onclick = function() {
     modal4.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
