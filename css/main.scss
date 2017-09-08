@@ -233,10 +233,12 @@ strong {
 }
 .programme {
   .programme-row {
+    display: table-row;
+    min-height: 2em;
     .time,
     .session {
-      display: inline-block;
-      float: left;
+      display: table-cell;
+      padding: .25em;
     }
     .time {
       width: 20%;

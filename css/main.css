@@ -211,16 +211,19 @@ strong {
 .programme > div:nth-child(even) div {
   background: #eeeeee; }
 
-.programme .programme-row .time,
-.programme .programme-row .session {
-  display: inline-block;
-  float: left; }
-.programme .programme-row .time {
-  width: 20%; }
-.programme .programme-row .session {
-  width: 80%; }
-  .programme .programme-row .session span {
-    color: #ed7624; }
+.programme .programme-row {
+  display: table-row;
+  min-height: 2em; }
+  .programme .programme-row .time,
+  .programme .programme-row .session {
+    display: table-cell;
+    padding: .25em; }
+  .programme .programme-row .time {
+    width: 20%; }
+  .programme .programme-row .session {
+    width: 80%; }
+    .programme .programme-row .session span {
+      color: #ed7624; }
 
 /* The Modal (background) */
 .modal,
