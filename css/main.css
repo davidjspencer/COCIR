@@ -217,13 +217,17 @@ strong {
   .programme .programme-row .time,
   .programme .programme-row .session {
     display: table-cell;
-    padding: .25em; }
+    padding: .5em;
+    color: #666666;
+    font-weight: bold; }
   .programme .programme-row .time {
     width: 20%; }
   .programme .programme-row .session {
     width: 80%; }
     .programme .programme-row .session span {
-      color: #ed7624; }
+      color: #ed7624;
+      cursor: pointer;
+      white-space: nowrap; }
 
 /* The Modal (background) */
 .modal,
@@ -244,28 +248,42 @@ strong {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
   /* Black w/ opacity */ }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #eeeeee;
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #666666;
-  width: 60%;
-  /* Could be more or less, depending on screen size */ }
+  width: 40%;
+  font-weight: 400;
+  background: #ffffff !important;
+  box-shadow: 2px 2px 3px #666666; }
 
 /* The Close Button */
 .close,
 .close2,
 .close3,
 .close4 {
-  color: #aaa;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  -moz-transition: -moz-transform ease 0.6s;
+  -webkit-transition: -webkit-transform ease 0.6s;
+  -o-transition: -o-transform ease 0.6s;
+  -ms-transition: -ms-transform ease 0.6s;
+  transition: transform ease 0.6s; }
+  .close:hover,
+  .close2:hover,
+  .close3:hover,
+  .close4:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
 
 .close:hover,
 .close:focus,
@@ -275,7 +293,6 @@ strong {
 .close3:focus,
 .close4:hover,
 .close4:focus {
-  color: black;
   text-decoration: none;
   cursor: pointer; }
 
@@ -541,7 +558,11 @@ strong {
     overflow-x: auto; }
 
   .min-width {
-    min-width: 160px; } }
+    min-width: 160px; }
+
+  /* Modal Content/Box */
+  .modal-content {
+    width: 80%; } }
 @media only screen and (min-device-width: 695px) and (max-device-width: 819px) {
   .publication-row .publication {
     width: calc(50% - 2em); }

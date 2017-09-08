@@ -235,10 +235,13 @@ strong {
   .programme-row {
     display: table-row;
     min-height: 2em;
+
     .time,
     .session {
       display: table-cell;
-      padding: .25em;
+      padding: .5em;
+      color: $dark-grey;
+      font-weight: bold;
     }
     .time {
       width: 20%;
@@ -247,6 +250,8 @@ strong {
       width: 80%;
       span {
         color: $orange;
+        cursor: pointer;
+        white-space: nowrap;
       }
     }
   }
@@ -264,16 +269,20 @@ strong {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.2) !important; /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: $light-grey;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid $dark-grey;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 40%;
+    font-weight: 400;
+    background: $white !important;
+    box-shadow: 2px 2px 3px $dark-grey;
+    &:hover {
+    }
 }
 
 /* The Close Button */
@@ -281,10 +290,23 @@ strong {
 .close2,
 .close3,
 .close4 {
-    color: #aaa;
+
     float: right;
     font-size: 28px;
     font-weight: bold;
+
+    -moz-transition: -moz-transform ease 0.6s;
+    -webkit-transition: -webkit-transform ease 0.6s;
+    -o-transition: -o-transform ease 0.6s;
+    -ms-transition: -ms-transform ease 0.6s;
+    transition: transform ease 0.6s;
+    &:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .close:hover,
@@ -295,10 +317,11 @@ strong {
 .close3:focus,
 .close4:hover,
 .close4:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+
+  text-decoration: none;
+  cursor: pointer;
 }
+
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
   body {
     width: 100vw;
@@ -599,6 +622,10 @@ strong {
     .min-width {
       min-width: 160px;
     }
+    /* Modal Content/Box */
+  .modal-content {
+    width: 80%;
+  }
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px)  {
   .publication-row {
