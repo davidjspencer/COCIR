@@ -357,7 +357,7 @@ strong {
     font-weight: bold;
   }
   .dropdown a {
-    padding: .6em 1.2em;
+    padding: 1.2em 1.2em;
     float:left;
     width:100%;
     border:none;
@@ -382,7 +382,7 @@ strong {
     display:block;
     color: $white;
     background: $dark-grey;
-    padding: .6em 1.2em;
+    padding: 1.2em 1.2em;
     font-size: 1.25em;
   }
   .header.container {
@@ -459,7 +459,6 @@ strong {
       padding: 0;
     }
   }
-
   .twitter--block {
     margin-bottom: 2em;
     img {
@@ -480,12 +479,10 @@ strong {
       background: linear-gradient(lighten($blue,20), $blue);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
   }
-
   .in-co-op {
     width: 100%;
     overflow: auto;
     text-align: center;
-
   .co-op,
   .partnership {
     border: 1px solid $blue;
@@ -506,7 +503,6 @@ strong {
       width: 100%;
       text-align: center;
       .logos-container {
-
           margin-left: auto;
           margin-right: auto;
           align-content: center;
@@ -575,7 +571,6 @@ strong {
   .hamburger-icon span {
       width: 40px;
       background-color: $white;
-
       height: 5px;
       display: block;
       margin-bottom: 6px;
@@ -604,7 +599,6 @@ strong {
         p {
           color: $blue;
         }
-
       }
       .logos {
         width: 100%;

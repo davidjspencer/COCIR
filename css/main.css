@@ -325,7 +325,7 @@ strong {
     font-weight: bold; }
 
   .dropdown a {
-    padding: .6em 1.2em;
+    padding: 1.2em 1.2em;
     float: left;
     width: 100%;
     border: none;
@@ -349,7 +349,7 @@ strong {
     display: block;
     color: #ffffff;
     background: #666666;
-    padding: .6em 1.2em;
+    padding: 1.2em 1.2em;
     font-size: 1.25em; }
 
   .header.container {
