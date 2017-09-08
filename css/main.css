@@ -219,6 +219,8 @@ strong {
   width: 20%; }
 .programme .programme-row .session {
   width: 80%; }
+  .programme .programme-row .session span {
+    color: #ed7624; }
 
 /* The Modal (background) */
 .modal,

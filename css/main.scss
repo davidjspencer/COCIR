@@ -243,6 +243,9 @@ strong {
     }
     .session {
       width: 80%;
+      span {
+        color: $orange;
+      }
     }
   }
 }
