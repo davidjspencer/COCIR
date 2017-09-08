@@ -752,6 +752,7 @@ strong {
     width: 80%;
     float: left;
     display: inline-block;
+    overflow: auto;
 
 
     .home--body__text {
@@ -787,13 +788,16 @@ strong {
   }
   .in-co-op {
     clear: both;
-    width: 100%;
-
+    position: absolute;
+    width: 80%;
+    bottom: 0;
     margin-top: 2em;
     padding: 0 2em 0 0;
+
     .co-op {
       border-bottom: 1px solid $blue;
     }
+
     .co-op,
     .partnership {
       display: inline-block;
@@ -974,6 +978,22 @@ strong {
       table.hotel-table {
         width: 100%;
 
+      }
+    }
+  }
+}
+@media only screen and (min-device-width : 820px) and (max-device-width : 900px)  {
+  /* for index, hides image and keeps in-co-op in place */
+  .home--body__text {
+    width: 100% !important;
+  }
+  .home--body__img {
+    display: none !important;
+  }
+  .in-co-op {
+    .logos {
+      .logos-container {
+        width: 75% !important;
       }
     }
   }

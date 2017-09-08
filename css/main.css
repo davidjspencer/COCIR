@@ -661,7 +661,8 @@ strong {
     .home--body .home--body__left {
       width: 80%;
       float: left;
-      display: inline-block; }
+      display: inline-block;
+      overflow: auto; }
       .home--body .home--body__left .home--body__text {
         width: calc(60%);
         /* include img padding *2 if needed*/
@@ -688,7 +689,9 @@ strong {
         margin: 0; }
     .home--body .in-co-op {
       clear: both;
-      width: 100%;
+      position: absolute;
+      width: 80%;
+      bottom: 0;
       margin-top: 2em;
       padding: 0 2em 0 0; }
       .home--body .in-co-op .co-op {
@@ -845,5 +848,15 @@ strong {
       width: 80%; }
       .pages--body__text.no-img.hotel .reg-table table.hotel-table {
         width: 100%; } }
+@media only screen and (min-device-width: 820px) and (max-device-width: 900px) {
+  /* for index, hides image and keeps in-co-op in place */
+  .home--body__text {
+    width: 100% !important; }
+
+  .home--body__img {
+    display: none !important; }
+
+  .in-co-op .logos .logos-container {
+    width: 75% !important; } }
 
 /*# sourceMappingURL=main.css.map */
