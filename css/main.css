@@ -660,6 +660,7 @@ strong {
     overflow: auto; }
     .home--body .home--body__left {
       width: 80%;
+      min-height: 400px;
       float: left;
       display: inline-block;
       overflow: auto; }
@@ -849,6 +850,10 @@ strong {
       .pages--body__text.no-img.hotel .reg-table table.hotel-table {
         width: 100%; } }
 @media only screen and (min-device-width: 820px) and (max-device-width: 900px) {
+  #nav-desktop .dropdown a {
+    padding-left: .75em;
+    padding-right: .75em; }
+
   /* for index, hides image and keeps in-co-op in place */
   .home--body__text {
     width: 100% !important; }

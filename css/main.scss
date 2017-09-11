@@ -741,10 +741,10 @@ strong {
 
   .home--body__left {
     width: 80%;
+    min-height: 400px;
     float: left;
     display: inline-block;
     overflow: auto;
-
 
     .home--body__text {
       width: calc(60%); /* include img padding *2 if needed*/
@@ -974,6 +974,12 @@ strong {
   }
 }
 @media only screen and (min-device-width : 820px) and (max-device-width : 900px)  {
+  #nav-desktop {
+    .dropdown a {
+      padding-left: .75em;
+      padding-right: .75em;
+    }
+  }
   /* for index, hides image and keeps in-co-op in place */
   .home--body__text {
     width: 100% !important;
