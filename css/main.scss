@@ -1,3 +1,5 @@
+/* browser-sync start --server --files "*.html, css/*.css" */
+/* sass --watch main.scss:main.css */
 $orange: #ed7624;
 $dark-orange: #ec7404;
 $dark-grey: #666666;
@@ -30,7 +32,7 @@ h3 {
 h1 {
   color: $dark-orange;
   font-family: verdana, arial, sans-serif;
-  font-size: 1.43em; /*20px*/
+  font-size: 1.43em; /*20px
   margin: 1em 0;
 }
 

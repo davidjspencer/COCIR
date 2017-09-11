@@ -1,3 +1,5 @@
+/* browser-sync start --server --files "*.html, css/*.css" */
+/* sass --watch main.scss:main.css */
 * {
   font-family: verdana;
   font-size: 14px;
@@ -38,8 +40,9 @@ h1 {
   color: #ec7404;
   font-family: verdana, arial, sans-serif;
   font-size: 1.43em;
-  /*20px*/
-  margin: 1em 0; }
+                     /*20px
+  margin: 1em 0;
+}
 
 .banner-hl {
   margin-top: 1.25em;
@@ -47,32 +50,34 @@ h1 {
   color: #0074a3;
   font-family: verdana, arial, sans-serif;
   font-weight: bold;
-  font-size: 34px; }
+  font-size: 34px;
+}
 
 h2 {
-  color: #ec7404;
+  color: $dark-orange;
   font-family: verdana, arial, sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 h3 {
   color: #0074a3;
   font-family: verdana, arial, sans-serif;
-  font-size: 16px; }
-
+  font-size: 16px;
+}
 p,
 li {
-  color: #666666;
-  line-height: normal; }
-
+  color: $dark-grey;
+  line-height: normal;
+}
 ul li {
-  list-style-type: disc; }
-
-ol > li {
-  margin: 1em 0; }
-
+  list-style-type: disc;
+}
+ol>li {
+  margin: 1em 0;
+}
 p {
-  margin: 1em 0; }
-
+  margin: 1em 0;
+}
 img {
   /*border: 1px solid $light-grey;
   padding: .5em;*/ }
