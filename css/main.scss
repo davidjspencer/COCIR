@@ -32,7 +32,7 @@ h3 {
 h1 {
   color: $dark-orange;
   font-family: verdana, arial, sans-serif;
-  font-size: 1.43em; /*20px
+  font-size: 1.43em;
   margin: 1em 0;
 }
 
@@ -70,10 +70,7 @@ ol>li {
 p {
   margin: 1em 0;
 }
-img {
-  /*border: 1px solid $light-grey;
-  padding: .5em;*/
-}
+
 .hide {
   display: none !important;
 }
