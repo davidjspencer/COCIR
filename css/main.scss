@@ -743,7 +743,6 @@ strong {
 
   .home--body__left {
     width: 80%;
-    min-height: 400px;
     float: left;
     display: inline-block;
     overflow: auto;
@@ -756,7 +755,6 @@ strong {
     }
     .home--body__img {
       width: 40%;
-
       display: inline-block;
       float: left;
       padding: 0 2em 0 0;
@@ -780,10 +778,9 @@ strong {
     }
   }
   .in-co-op {
+    float: left;
     clear: both;
-    position: absolute;
-    width: 80%;
-    bottom: 0;
+    width: 100%;
     margin-top: 2em;
     padding: 0 2em 0 0;
 
