@@ -248,10 +248,13 @@ strong {
     }
     .session {
       width: 80%;
-      span {
+      span.more-info {
         color: $orange;
         cursor: pointer;
         white-space: nowrap;
+      }
+      span.light {
+        font-weight: 400;
       }
     }
   }
@@ -640,11 +643,18 @@ strong {
     .venue-img {
       width: 100%;
       clear: both;
+      padding: 2em 0;
       img {
         display: inline-block;
         width: 50%;
         height: auto;
-        padding: 1em;
+
+      }
+      .venue-img-left {
+        padding: 1em 1em 1em 0;
+      }
+      .venue-img-right {
+        padding: 1em 0 1em 1em;
       }
     }
 }
@@ -927,11 +937,18 @@ strong {
     .venue-img {
       width: 100%;
       clear: both;
+      padding: 2em 0;
       img {
         display: inline-block;
         width: 50%;
         height: auto;
-        padding: 1em;
+
+      }
+      .venue-img-left {
+        padding: 1em 1em 1em 0;
+      }
+      .venue-img-right {
+        padding: 1em 0 1em 1em;
       }
     }
     .strategic-partner {

@@ -222,10 +222,12 @@ strong {
     width: 20%; }
   .programme .programme-row .session {
     width: 80%; }
-    .programme .programme-row .session span {
+    .programme .programme-row .session span.more-info {
       color: #ed7624;
       cursor: pointer;
       white-space: nowrap; }
+    .programme .programme-row .session span.light {
+      font-weight: 400; }
 
 /* The Modal (background) */
 .modal,
@@ -580,12 +582,16 @@ strong {
 
   .venue-img {
     width: 100%;
-    clear: both; }
+    clear: both;
+    padding: 2em 0; }
     .venue-img img {
       display: inline-block;
       width: 50%;
-      height: auto;
-      padding: 1em; } }
+      height: auto; }
+    .venue-img .venue-img-left {
+      padding: 1em 1em 1em 0; }
+    .venue-img .venue-img-right {
+      padding: 1em 0 1em 1em; } }
 @media only screen and (min-device-width: 820px) {
   .hide-lg {
     display: none; }
@@ -813,12 +819,16 @@ strong {
 
   .venue-img {
     width: 100%;
-    clear: both; }
+    clear: both;
+    padding: 2em 0; }
     .venue-img img {
       display: inline-block;
       width: 50%;
-      height: auto;
-      padding: 1em; }
+      height: auto; }
+    .venue-img .venue-img-left {
+      padding: 1em 1em 1em 0; }
+    .venue-img .venue-img-right {
+      padding: 1em 0 1em 1em; }
 
   .strategic-partner {
     width: 100%;
