@@ -74,6 +74,9 @@ ol > li {
 p {
   margin: 1em 0; }
 
+.no-top-margin {
+  margin-top: 0; }
+
 .hide {
   display: none !important; }
 
