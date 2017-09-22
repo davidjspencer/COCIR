@@ -80,6 +80,9 @@ p {
 .hide {
   display: none !important; }
 
+.dropdown-content > .active {
+  background: #f3a26b; }
+
 .container {
   width: 93.5%;
   max-width: 1200px;
@@ -162,16 +165,32 @@ table td {
     text-align: right; }
 
 .row {
-  width: 100%; }
+  width: 100%;
+  margin: 1em 0;
+  clear: both;
+  overflow: auto; }
   .row .row--item {
     display: inline-block;
     float: left;
-    width: 100%; }
+    width: 100%;
+    padding: 1em; }
     .row .row--item .row--item__content .img img {
       width: 100%;
       height: auto;
       margin-left: auto;
       margin-right: auto; }
+  .row .row--item__logo {
+    /* Partners & Media Partners */
+    display: inline-block;
+    float: none;
+    width: 25%;
+    display: table-cell;
+    vertical-align: middle; }
+    .row .row--item__logo a img {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 1em; }
 
 .publication-row .publication {
   width: 100%;

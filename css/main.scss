@@ -76,6 +76,9 @@ p {
 .hide {
   display: none !important;
 }
+.dropdown-content > .active {
+  background: lighten($orange, 15);
+}
 .header {
 }
 .container {
@@ -168,10 +171,14 @@ table {
 }
 .row {
   width: 100%;
+  margin: 1em 0;
+  clear: both;
+  overflow: auto;
   .row--item {
     display: inline-block;
     float: left;
     width: 100%;
+    padding: 1em;
     .row--item__content {
       .img {
         img {
@@ -183,7 +190,24 @@ table {
       }
     }
   }
+  .row--item__logo { /* Partners & Media Partners */
+    display: inline-block;
+    float: none;
+    width: 25%;
+    display:table-cell;
+    vertical-align:middle;
+
+    a {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 1em;
+      }
+    }
+  }
 }
+
 .publication-row {
   .publication {
     width: 100%;
