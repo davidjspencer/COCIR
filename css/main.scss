@@ -304,16 +304,16 @@ strong {
 .close3,
 .close4 {
 
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 
-    -moz-transition: -moz-transform ease 0.6s;
-    -webkit-transition: -webkit-transform ease 0.6s;
-    -o-transition: -o-transform ease 0.6s;
-    -ms-transition: -ms-transform ease 0.6s;
-    transition: transform ease 0.6s;
-    &:hover {
+  -moz-transition: -moz-transform ease 0.6s;
+  -webkit-transition: -webkit-transform ease 0.6s;
+  -o-transition: -o-transform ease 0.6s;
+  -ms-transition: -ms-transform ease 0.6s;
+  transition: transform ease 0.6s;
+  &:hover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(360deg);
