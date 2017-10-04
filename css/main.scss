@@ -341,8 +341,17 @@ strong {
       width: 100%;
       img {
         height: auto;
-        width: 90%;
-        padding: 1em 0;
+        width: 100%;
+      }
+    }
+    .speaker--text {
+      .speaker--name {
+        color: $blue;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+      .speaker--details {
+        font-weight: bold;
       }
     }
   }
@@ -706,8 +715,38 @@ strong {
       }
     }
   }
+
+  .speakers {
+    width: 100% !important;
+
+    .speaker {
+      width: 100%;
+      .speaker--img {
+        width: 15%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+      .speaker--text {
+        width: 85%;
+        display: inline-block;
+        padding-left: 2em;
+        .speaker--name {
+          margin-top: 0;
+          color: $blue;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-device-width : 820px) {
+
+
   .hide-lg {
     display: none;
   }
@@ -793,16 +832,16 @@ strong {
     background-size:cover;
   }
   .home--body {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: auto;
-
-  .home--body__left {
-    width: 80%;
-    float: left;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
     overflow: auto;
+
+    .home--body__left {
+      width: 80%;
+      float: left;
+      display: inline-block;
+      overflow: auto;
 
     .home--body__text {
       width: calc(60%); /* include img padding *2 if needed*/
@@ -882,6 +921,33 @@ strong {
           width: 50%;
           height: auto;
           padding: .25em;
+        }
+      }
+    }
+  }
+  .speakers {
+    width: 100% !important;
+
+    .speaker {
+      width: 100%;
+      .speaker--img {
+        width: 15%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+      .speaker--text {
+        width: 85%;
+        display: inline-block;
+        padding-left: 2em;
+        .speaker--name {
+          margin-top: 0;
+          color: $blue;
+          font-weight: bold;
         }
       }
     }
