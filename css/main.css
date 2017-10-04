@@ -307,7 +307,8 @@ strong {
   cursor: pointer; }
 
 .speaker {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2em; }
   .speaker .speaker--img {
     width: 100%; }
     .speaker .speaker--img img {
@@ -662,7 +663,8 @@ strong {
   .speakers {
     width: 100% !important; }
     .speakers .speaker {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 4em; }
       .speakers .speaker .speaker--img {
         width: 15% !important;
         height: 100%;
