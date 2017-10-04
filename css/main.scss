@@ -334,10 +334,18 @@ strong {
   text-decoration: none;
   cursor: pointer;
 }
-
+.marg-top-2em {
+  margin-top: 2em;
+}
+.speakers {
+  .download--bar {
+    margin: 2em 0;
+  }
   .speaker {
     width: 100%;
     margin-bottom: 2em;
+
+
     .speaker--img {
       width: 100%;
       img {
@@ -356,7 +364,7 @@ strong {
       }
     }
   }
-
+}
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
   body {
     width: 100vw;
@@ -719,9 +727,12 @@ strong {
 
   .speakers {
     width: 100% !important;
-
+    .download--bar {
+      width: 50%;
+    }
     .speaker {
       width: 100%;
+      clear: both;
       .speaker--img {
         width: 15%;
         height: 100%;
@@ -749,8 +760,11 @@ strong {
 
   .speakers {
     width: 100% !important;
-
+        .download--bar {
+          width: 50%;
+        }
     .speaker {
+      clear: both;
       width: 100%;
       margin-bottom: 4em;
       .speaker--img {

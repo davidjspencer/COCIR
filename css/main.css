@@ -306,19 +306,24 @@ strong {
   text-decoration: none;
   cursor: pointer; }
 
-.speaker {
+.marg-top-2em {
+  margin-top: 2em; }
+
+.speakers .download--bar {
+  margin: 2em 0; }
+.speakers .speaker {
   width: 100%;
   margin-bottom: 2em; }
-  .speaker .speaker--img {
+  .speakers .speaker .speaker--img {
     width: 100%; }
-    .speaker .speaker--img img {
+    .speakers .speaker .speaker--img img {
       height: auto;
       width: 100%; }
-  .speaker .speaker--text .speaker--name {
+  .speakers .speaker .speaker--text .speaker--name {
     color: #0074a3;
     font-weight: bold;
     font-size: 1.25em; }
-  .speaker .speaker--text .speaker--details {
+  .speakers .speaker .speaker--text .speaker--details {
     font-weight: bold; }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 819px) {
@@ -641,8 +646,11 @@ strong {
 
   .speakers {
     width: 100% !important; }
+    .speakers .download--bar {
+      width: 50%; }
     .speakers .speaker {
-      width: 100%; }
+      width: 100%;
+      clear: both; }
       .speakers .speaker .speaker--img {
         width: 15%;
         height: 100%;
@@ -662,7 +670,10 @@ strong {
 @media only screen and (min-device-width: 820px) {
   .speakers {
     width: 100% !important; }
+    .speakers .download--bar {
+      width: 50%; }
     .speakers .speaker {
+      clear: both;
       width: 100%;
       margin-bottom: 4em; }
       .speakers .speaker .speaker--img {
