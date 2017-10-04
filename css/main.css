@@ -664,7 +664,7 @@ strong {
     .speakers .speaker {
       width: 100%; }
       .speakers .speaker .speaker--img {
-        width: 15%;
+        width: 15% !important;
         height: 100%;
         display: inline-block;
         float: left; }
@@ -672,7 +672,7 @@ strong {
           height: auto;
           width: 100%; }
       .speakers .speaker .speaker--text {
-        width: 85%;
+        width: 85% !important;
         display: inline-block;
         padding-left: 2em; }
         .speakers .speaker .speaker--text .speaker--name {
