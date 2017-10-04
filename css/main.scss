@@ -335,6 +335,18 @@ strong {
   cursor: pointer;
 }
 
+  .speaker {
+    width: 100%;
+    .speaker--img {
+      width: 100%;
+      img {
+        height: auto;
+        width: 90%;
+        padding: 1em 0;
+      }
+    }
+  }
+
 @media only screen and (min-device-width : 280px) and (max-device-width : 819px) {
   body {
     width: 100vw;
