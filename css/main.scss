@@ -70,6 +70,9 @@ ol>li {
 p {
   margin: 1em 0;
 }
+.bold {
+  font-weight: bold;
+}
 .no-top-margin {
   margin-top: 0;
 }
@@ -1130,6 +1133,18 @@ strong {
       table.hotel-table {
         width: 100%;
 
+      }
+    }
+  }
+
+  .home--body.pages--body.network-dinner {
+    overflow: auto;
+    .pages--body__text {
+      h3 {
+        font-size: 18px;
+      }
+      .programme {
+        margin: 2em 0;
       }
     }
   }

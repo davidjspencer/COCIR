@@ -74,6 +74,9 @@ ol > li {
 p {
   margin: 1em 0; }
 
+.bold {
+  font-weight: bold; }
+
 .no-top-margin {
   margin-top: 0; }
 
@@ -966,7 +969,14 @@ strong {
     .pages--body__text.no-img.hotel .reg-table {
       width: 80%; }
       .pages--body__text.no-img.hotel .reg-table table.hotel-table {
-        width: 100%; } }
+        width: 100%; }
+
+  .home--body.pages--body.network-dinner {
+    overflow: auto; }
+    .home--body.pages--body.network-dinner .pages--body__text h3 {
+      font-size: 18px; }
+    .home--body.pages--body.network-dinner .pages--body__text .programme {
+      margin: 2em 0; } }
 @media only screen and (min-device-width: 820px) and (max-device-width: 900px) {
   #nav-desktop .dropdown a {
     padding-left: .75em;
