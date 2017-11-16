@@ -316,6 +316,7 @@ strong {
   margin: 2em 0; }
 .speakers .speaker {
   width: 100%;
+  overflow-y: auto;
   margin-bottom: 2em; }
   .speakers .speaker .speaker--img {
     width: 100%; }
