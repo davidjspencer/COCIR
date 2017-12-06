@@ -330,6 +330,9 @@ strong {
   .speakers .speaker .speaker--text .speaker--details {
     font-weight: bold; }
 
+.speaker-presentation li {
+  line-height: 1.5em; }
+
 @media only screen and (min-device-width: 280px) and (max-device-width: 819px) {
   body {
     width: 100vw; }
