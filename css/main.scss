@@ -764,9 +764,19 @@ strong {
       }
     }
   }
+  .photo-gallery {
+    a {
+      width: 25%;
+    }
+  }
 }
 @media only screen and (min-device-width : 820px) {
-
+  .photo-gallery {
+    a img {
+      width: 15%;
+      padding: 5px;
+    }
+  }
   .speakers {
     width: 100% !important;
         .download--bar {
