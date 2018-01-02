@@ -156,6 +156,9 @@ footer {
       background: #ed7624;
       color: #ffffff; }
 
+.download--bar__noTop {
+  margin-top: 0; }
+
 table th {
   background: #0074a3;
   color: #ffffff;
