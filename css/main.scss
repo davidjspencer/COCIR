@@ -382,7 +382,7 @@ strong {
     width: 100vw;
   }
   .hide-sm {
-    display: none;
+    display: none !important;
   }
   #nav-desktop {
     display: none;
@@ -930,13 +930,27 @@ strong {
 
   }
   .header {
-    height: 336px;
+    height: 278px;
+    margin-top: 58px;
     overflow: auto;
     border-bottom: 1px solid $light-grey;
     background: $blue;
-    background-image: url('../img/BannerWEBSITE_1200x336px.jpg');
+    /*background-image: url('../img/BannerWEBSITE_1200x336px.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover;*/
+
+    .mySlides {
+      animation: opac 0.8s;
+    }
+    @keyframes opac {
+      0% {
+        opacity: .5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   }
   .home--body {
     width: 100%;
