@@ -883,7 +883,7 @@ strong {
     .home--body .charts {
       clear: both;
       width: 100%;
-      padding: 1em 0; }
+      padding: 1em 28px 1.5em 0; }
       .home--body .charts img {
         display: inline-block;
         float: left;
@@ -894,7 +894,7 @@ strong {
       clear: both;
       width: 100%;
       margin-top: 2em;
-      padding: 0 2em 0 0; }
+      padding: 2em 2em 0 0; }
       .home--body .in-co-op .co-op {
         border-bottom: 1px solid #0074a3; }
       .home--body .in-co-op .co-op,
