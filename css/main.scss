@@ -506,9 +506,14 @@ strong {
     float: left;
   }
   .home--body__img {
-    img {
-      width: 93.5vw;
-      padding: 0;
+    .iframe-container {
+
+      iframe { /* youtube on home */
+        width: 93.5vw;
+        height: 56.25vw; /* 100/56.25 = 560/315 = 1.778 */
+        height: calc(93.5vw / 56.25vw);
+        background: $blue;
+      }
     }
   }
   .twitter--block {
@@ -703,6 +708,7 @@ strong {
   }
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px)  {
+
   .publication-row {
     .publication {
       width: calc(50% - 2em);
@@ -855,7 +861,7 @@ strong {
   }
 
   .hide-lg {
-    display: none;
+    display: none !important;
   }
   #mySidebar {
     display: none;
@@ -930,8 +936,9 @@ strong {
 
   }
   .header {
-    height: 278px;
-    margin-top: 58px;
+
+    height: auto;
+    margin-top: 24px;
     overflow: auto;
     border-bottom: 1px solid $light-grey;
     background: $blue;
@@ -940,6 +947,7 @@ strong {
     background-size:cover;*/
 
     .mySlides {
+      width: 100%;
       animation: opac 0.8s;
     }
     @keyframes opac {
@@ -975,9 +983,20 @@ strong {
       display: inline-block;
       float: left;
       padding: 0 2em 0 0;
-      img {
+      .iframe-container {
+        position: relative;
         width: 100%;
-        height: auto;
+        height: 0;
+        padding-bottom: 56.25%;
+        margin-bottom: .25em;
+
+        iframe { /* youtube on home */
+          position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+        }
       }
     }
   }
