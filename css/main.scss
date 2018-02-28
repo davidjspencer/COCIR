@@ -811,6 +811,9 @@ strong {
 }
 
 @media only screen and (min-device-width : 820px) {
+  .width-sixty {
+    width: 60%;
+  }
   .photo-gallery {
     width: calc(100% + 15px);
     overflow: auto;
